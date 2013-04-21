@@ -19,4 +19,5 @@ def generate_binary_string(dec):
 
 def count_non_adjacent_digits(n):
     for i in xrange(1,n):
-        print i
+        pass
+    return n
