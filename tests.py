@@ -11,6 +11,8 @@ class test_binary_digits(unittest.TestCase):
 
     def test_create_binary_digits_from_decimal(self):
         self.assertEqual(generate_binary(1),'1')
+        self.assertEqual(generate_binary(2), '10')
+        self.assertEqual(generate_binary(3), '11')
 
 
 
