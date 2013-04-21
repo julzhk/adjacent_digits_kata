@@ -19,7 +19,7 @@ def generate_binary_string(dec):
 
 def count_non_adjacent_digits(n):
     total = 0
-    for i in xrange(1,n+1):
+    for i in xrange(0,n+1):
         if not has_adjacent_digits(generate_binary_string(i)):
             total +=1
     return total
