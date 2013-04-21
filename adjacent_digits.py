@@ -14,5 +14,9 @@ __author__ = 'julz'
 def has_adjacent_digits(binarystring):
     return '11' in binarystring
 
-def generate_binary(dec):
+def generate_binary_string(dec):
     return str(bin(dec))[2:]
+
+def count_non_adjacent_digits(n):
+    for i in xrange(1,n):
+        print i
