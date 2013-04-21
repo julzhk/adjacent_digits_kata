@@ -10,3 +10,7 @@ __author__ = 'julz'
 
 # http://codekata.pragprog.com/2007/01/code_kata_fifte.html#more
 
+
+def has_adjacent_digits(binarystring):
+    return '11' in binarystring
+

@@ -1,4 +1,4 @@
-import adjacent_digits
+from adjacent_digits import has_adjacent_digits
 import unittest
 
 class test_binary_digits(unittest.TestCase):
