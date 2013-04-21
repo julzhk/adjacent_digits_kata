@@ -16,10 +16,11 @@ class test_binary_digits(unittest.TestCase):
         self.assertEqual(generate_binary_string(3), '11')
 
     def test_count_number_non_adjacent_binary_digits(self):
-        self.assertEqual(count_non_adjacent_digits(1),1)
-        self.assertEqual(count_non_adjacent_digits(2),2)
-        self.assertEqual(count_non_adjacent_digits(3),2)
+        self.assertEqual(count_non_adjacent_digits(1),2)
+        self.assertEqual(count_non_adjacent_digits(2),3)
+        self.assertEqual(count_non_adjacent_digits(3),3)
 
-
-
+    def test_acceptance_test(self):
+        self.assertEqual(generate_binary_string(7),'111')
+        self.assertEqual(count_non_adjacent_digits(7),5)
 
