@@ -18,6 +18,8 @@ def generate_binary_string(dec):
     return str(bin(dec))[2:]
 
 def count_non_adjacent_digits(n):
-    for i in xrange(1,n):
-        pass
-    return n
+    total = 0
+    for i in xrange(1,n+1):
+        if not has_adjacent_digits(generate_binary_string(i)):
+            total +=1
+    return total

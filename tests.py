@@ -17,6 +17,8 @@ class test_binary_digits(unittest.TestCase):
 
     def test_count_number_non_adjacent_binary_digits(self):
         self.assertEqual(count_non_adjacent_digits(1),1)
+        self.assertEqual(count_non_adjacent_digits(2),2)
+        self.assertEqual(count_non_adjacent_digits(3),2)
 
 
 
