@@ -14,3 +14,5 @@ __author__ = 'julz'
 def has_adjacent_digits(binarystring):
     return '11' in binarystring
 
+def generate_binary(dec):
+    pass
