@@ -8,7 +8,7 @@ __author__ = 'julz'
 
 # What is the number for sequences of length 4, 5, 10, n?
 
-# http://codekata.pragprog.com/2007/01/code_kata_fifte.html#more
+# http://codekata.com/kata/kata15-a-diversion/
 
 
 def has_adjacent_digits(binarystring):
