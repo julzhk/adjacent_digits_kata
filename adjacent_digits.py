@@ -15,11 +15,19 @@ def has_adjacent_digits(binarystring):
     return '11' in binarystring
 
 def generate_binary_string(dec):
+    """
+     Turn a decimal number into binary, but as a string.
+    """
     return str(bin(dec))[2:]
 
-def count_non_adjacent_digits(n):
-    total = 0
-    for i in xrange(0,n+1):
-        if not has_adjacent_digits(generate_binary_string(i)):
-            total +=1
-    return total
+
+def count_non_adjacent_digits(n,total=0):
+    """
+    Note: simple recursion
+    Naive: doesn't cache nor optimized..
+    """
+    if n>=0:
+        n_has_no_adjacent_digits = not has_adjacent_digits(generate_binary_string(n))
+        return count_non_adjacent_digits(n-1,total+n_has_no_adjacent_digits)
+    else:
+        return total
